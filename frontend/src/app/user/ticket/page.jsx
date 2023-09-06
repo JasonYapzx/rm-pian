@@ -1,5 +1,5 @@
 const TicketsPage = () => {
-    return (  );
+    return ( <div>ticket</div> );
 }
  
 export default TicketsPage;
