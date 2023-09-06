@@ -1,5 +1,6 @@
-const TicketsPage = () => {
-    return (  );
+const TicketPage = () => {
+    <div>Ticket Page
+        </div>
 }
- 
-export default TicketsPage;
+
+export default TicketPage;
