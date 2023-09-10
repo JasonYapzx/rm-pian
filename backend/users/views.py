@@ -1,8 +1,9 @@
 import json
 from django.shortcuts import get_object_or_404, render
 from django.http import JsonResponse
-from .models import User
 
+from .serializers import UserSerializer
+from .models import User
 
 '''
 User controllers
@@ -17,14 +18,14 @@ def create_user(request):
             # Extract values from the JSON data
             name = json_data.get('user', {}).get('name')
             dob = json_data.get('user', {}).get('dob')
-            is_merchant = json_data.get('user', {}).get('isMerchant')
+            is_merchant = json_data.get('user', {}).get('is_merchant')
             email = json_data.get('user', {}).get('email')
 
             # Create and save the user
             user = User(name=name, dob=dob, is_merchant=is_merchant, email=email)
             user.save()
 
-            return JsonResponse({'message': 'User created successfully'})
+            return JsonResponse({'message': f'{user.name} created successfully'})
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON data'}, status=400)
     else:
@@ -38,7 +39,7 @@ def read_user(request, user_id):
         'name': user.name,
         'dob': user.dob.strftime('%Y-%m-%d'),
         'date_created': user.date_created.strftime('%Y-%m-%d'),
-        'isMerchant': user.is_merchant,
+        'is_merchant': user.is_merchant,
         'email': user.email
     }
     return JsonResponse(data)
@@ -51,14 +52,14 @@ def update_user(request, user_id):
             
             user = get_object_or_404(User, id=user_id)
 
-            user.name = json_data.get('name', user.name)
-            user.dob = json_data.get('dob', user.dob)
-            user.is_merchant = json_data.get('isMerchant', user.is_merchant)
-            user.email = json_data.get('email', user.email)
+            serializer = UserSerializer(user, data=json_data, partial=True)
+            
+            if serializer.is_valid():
+                serializer.save()
+                return JsonResponse({'message': f'{user.name}\'s details were updated successfully'})
+            else:
+                return JsonResponse({'errors': serializer.errors}, status=400)
 
-            user.save()
-
-            return JsonResponse({'message': 'User updated successfully'})
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON data'}, status=400)
     else:
@@ -69,6 +70,6 @@ def delete_user(request, user_id):
     if request.method == 'DELETE':
         user = get_object_or_404(User, id=user_id)
         user.delete()
-        return JsonResponse({'message': 'User deleted successfully'})
+        return JsonResponse({'message': f'{user.name}\'s details were deleted successfully'})
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
