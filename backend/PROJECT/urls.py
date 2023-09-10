@@ -23,4 +23,5 @@ urlpatterns = [
     path('collection/', include('collection.urls')),  
     path('token/', include('bctoken.urls')),  
     path('listing/', include('listing.urls')),  
+    path('transaction/', include('transaction.urls')),  
 ]
