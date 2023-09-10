@@ -21,4 +21,5 @@ urlpatterns = [
 
     path('users/', include('users.urls')),
     path('collection/', include('collection.urls')),  
+    path('token/', include('bctoken.urls')),  
 ]
