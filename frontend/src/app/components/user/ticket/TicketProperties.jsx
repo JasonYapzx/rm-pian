@@ -1,10 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
 
-export default function TicketDetails() {
+export default function TicketProperties() {
     return (
         <Box>
-            Details
+            Properties
         </Box>
     )
 }
