@@ -41,7 +41,7 @@ export default function page() {
                     <Grid item xs={7}>
                         <Box sx={{ flexDirection: "column", display: "flex", alignContent: "flex-start" }}>
                             <Box my={1} sx={{ display: "inline-flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                                <Typography variant='h5' fontFamily={'sans-serif'}>Coldplay Music Of The Spheres #165</Typography>
+                                <Typography variant='h5' fontWeight='bold' fontFamily={'sans-serif'}>Coldplay Music Of The Spheres #165</Typography>
                                 {/* <Box>
                                     <Button variant="outlined" endIcon={<MessageSquare />}>Chat with Owner</Button>
                                 </Box> */}

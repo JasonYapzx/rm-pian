@@ -6,7 +6,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import TicketEventDetails from '@/app/components/user/ticket/TicketEventDetails'
 import TicketNftDetails from '@/app/components/user/ticket/TicketNftDetails'
