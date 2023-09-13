@@ -7,11 +7,10 @@ import ListItemText from '@mui/material/ListItemText';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
-import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import ListAltIcon from '@mui/icons-material/ListAlt';
-import TicketProperties from '@/app/components/user/ticket/TicketProperties'
-import TicketDescription from '@/app/components/user/ticket/TicketDescription'
-import TicketDetails from '@/app/components/user/ticket/TicketDetails'
+import TicketEventDetails from '@/app/components/user/ticket/TicketEventDetails'
+import TicketNftDetails from '@/app/components/user/ticket/TicketNftDetails'
+import { Event } from '@mui/icons-material';
 
 export default function TicketInformation() {
     const [open, setOpen] = React.useState(-1);
@@ -31,38 +30,27 @@ export default function TicketInformation() {
                 component="nav"
                 disablePadding
             >
-                <ListItemButton onClick={() => handleClick(0)}>
-                    <ListItemIcon>
-                        <FormatListBulletedIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Details" />
-                    {open == 0 ? <ExpandLess /> : <ExpandMore />}
-                </ListItemButton>
-                <Divider />
-                <Collapse in={open == 0} timeout="auto" unmountOnExit>
-                    <TicketDetails />
-                </Collapse>
-                <ListItemButton onClick={() => handleClick(1)}>
-                    <ListItemIcon>
-                        <ViewInArIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Properties" />
-                    {open == 1 ? <ExpandLess /> : <ExpandMore />}
-                </ListItemButton>
-                <Divider />
-                <Collapse in={open == 1} timeout="auto" unmountOnExit>
-                    <TicketProperties />
-                </Collapse>
                 <ListItemButton onClick={() => handleClick(2)}>
                     <ListItemIcon>
-                        <ListAltIcon />
+                        <Event />
                     </ListItemIcon>
-                    <ListItemText primary="Description" />
+                    <ListItemText primary="Event Details" />
                     {open == 2 ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Divider />
                 <Collapse in={open == 2} timeout="auto" unmountOnExit>
-                    <TicketDescription />
+                    <TicketEventDetails />
+                </Collapse>
+                <ListItemButton onClick={() => handleClick(0)}>
+                    <ListItemIcon>
+                        <ListAltIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="NFT Details" />
+                    {open == 0 ? <ExpandLess /> : <ExpandMore />}
+                </ListItemButton>
+                <Divider />
+                <Collapse in={open == 0} timeout="auto" unmountOnExit>
+                    <TicketNftDetails />
                 </Collapse>
             </List>
         </Card>

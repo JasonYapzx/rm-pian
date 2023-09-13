@@ -3,7 +3,7 @@
 import React from 'react'
 import TicketArt from '../../components/user/ticket/TicketArt'
 import TicketStats from '../../components/user/ticket/TicketStats'
-import TicketDetails from '../../components/user/ticket/TicketDetails'
+import TicketDetails from '../../components/user/ticket/TicketNftDetails'
 import TicketActivity from '../../components/user/ticket/TicketActivity'
 import Header from '../../components/header'
 import { Box, Button, Card, CardContent, Collapse, Divider, Grid, Typography } from '@mui/material'
@@ -24,7 +24,7 @@ import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import { ListAlt } from '@mui/icons-material';
 import TicketProperties from '@/app/components/user/ticket/TicketProperties'
-import TicketDescription from '@/app/components/user/ticket/TicketDescription'
+import TicketDescription from '@/app/components/user/ticket/TicketEventDetails'
 import TicketInformation from '@/app/components/user/ticket/TicketInformation'
 
 

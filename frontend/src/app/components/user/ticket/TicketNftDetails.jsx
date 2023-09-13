@@ -4,7 +4,7 @@ import { CopyAllOutlined, HelpOutline } from '@mui/icons-material'
 import Link from 'next/link'
 import { Copy } from 'react-feather'
 
-export default function TicketDetails() {
+export default function TicketNftDetails() {
     return (
         <Grid container spacing={3} p={4}>
             <Grid item xs={12} container>
