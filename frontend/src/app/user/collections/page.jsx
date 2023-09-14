@@ -198,12 +198,12 @@ const CollectionsPage = () => {
           sx={{
             py: 2,
             px: 2,
-            letterSpacing: '.01rem',
-            fontWeight: 700,
+            letterSpacing: '.1rem',
+            fontWeight: 400,
             color: 'ffffff',
             textDecoration: 'none',
 
-            fontSize: 20,
+            fontSize: 40,
           }}
         >
           Top Collections

@@ -1,5 +1,5 @@
 const TicketPage = () => {
-    return (  );
+    return ({} );
 }
  
 export default TicketPage;
