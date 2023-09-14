@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     'users',
     'collection',
-    'bctoken'
+    'bctoken',
+    'listing'
 ]
 
 MIDDLEWARE = [
