@@ -1,5 +1,7 @@
-import { Box, Card } from '@mui/material'
+import { Box } from '@mui/material'
 import React from 'react'
+import coldplay from '../../../../../public/coldplay.jpeg'
+import Image from 'next/image'
 
 export default function TicketArt() {
     return (
@@ -18,10 +20,12 @@ export default function TicketArt() {
                 justifyContent: "center"
             }}
         >
-            <Box
-                component="img"
-                src="https://www.snapdragonstadium.com/assets/img/Static_Digital-MainEventPage_1440x500_Coldplay_2023_Regional_SnapdragonStadium_0227_HER_070Shake_NEWSHOWADDED-f830d8441d.jpg"
-            />
+            <Box>
+                <Image
+                    src={coldplay}
+                    alt='Coldplay Ticket'
+                />
+            </Box>
         </ Box>
     )
 }
