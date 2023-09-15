@@ -1,11 +1,9 @@
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import BandIcon from '../../../../public/The1975cover.jpg'
-import InfoCard from '../../components/InfoCard';
-import { Content } from 'next/font/google';
-import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import LanguageIcon from '@mui/icons-material/Language';
 import SearchIcon from '@mui/icons-material/Search';
-import BasicTable from '../../components/BasicTable'
+import BasicTable from '../../components/BasicTable';
+import InfoCard from '../../components/InfoCard';
 
 const TicketsPage = () => {
     const overviewContent = {
@@ -20,11 +18,6 @@ const TicketsPage = () => {
     const otherContent = {
         'TOKEN CONTRACT': '0x7a63d17F5a59BCA04B6702F461b1f1A1c59b100B'
     }
-    const headers = [
-        'Txn Hash',
-        'Method',
-
-    ]
 
     return (
         <div className='mx-24'>
@@ -41,7 +34,7 @@ const TicketsPage = () => {
                     <KeyboardArrowDownIcon className='text-gray-500' />
                 </button>
                 <button className='flex flex-row rounded-md p-0.5 border border-gray-400 ml-1 w-fit hover:bg-gray-200'>
-                    <div >More</div>
+                    <div>More</div>
                     <KeyboardArrowDownIcon className='text-gray-500' />
                 </button>
             </div>
@@ -60,7 +53,9 @@ const TicketsPage = () => {
                 <button className='rounded-md bg-gray-200 hover:bg-gray-300 w-fit px-2.5 py-1 text-xs'>NFT Trades</button>
                 <button className='rounded-md bg-gray-200 hover:bg-gray-300 w-fit px-2.5 py-1 text-xs'>Contract</button>
                 <button className='rounded-md bg-gray-200 hover:bg-gray-300 w-fit px-2.5 py-1 text-xs'>Comments</button>
-                <SearchIcon className='rounded-md bg-gray-300 hover:bg-gray-400 w-fit px-2.5 py-1 text-md ml-auto text-gray-600' />
+                <button className='ml-auto'>
+                    <SearchIcon className='rounded-md bg-gray-300 hover:bg-gray-400 w-fit px-2.5 py-1 text-md text-gray-600' />
+                </button>
             </div>
 
             <div className='mt-3'>
