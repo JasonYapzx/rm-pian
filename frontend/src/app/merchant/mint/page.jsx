@@ -12,7 +12,7 @@ import Fab from '@mui/material/Fab';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
-import the1975 from '../../../../public/the1975.jpeg';
+import sam from '../../../../public/sam.jpeg';
 
 const MerchantPage = () => {
   return (
@@ -53,7 +53,7 @@ const MerchantPage = () => {
           </Typography>
           <TextField
             id='outlined-basic'
-            label='The 1975: At Their Very Best Tour in Singapore'
+            label='Sam Smith: GLORIA the tour'
             variant='outlined'
             sx={{ width: '90%', marginBottom: 3 }}
           />
@@ -81,11 +81,11 @@ const MerchantPage = () => {
               <div>
                   <div className="shadow-xl shadow-black icon bg-black rounded-xl px-4 flex flex-col justify-around text-white md:w-[400px] md:h-[400px] w-[200px] h-[200px]">
                     <div className="font-serif align-top md:text-lg text-[10px]">
-                      <h1> Name: The 1975: At Their Very Best Tour in Singapore </h1>
+                      <h1> Name: Sam Smith: GLORIA the tour</h1>
                       <h1> Description:  </h1>
                     </div>
                       <Image
-                        src={the1975}
+                        src={sam}
                         alt="logo"
                         className="md:w-40 w-20 transition duration-200 hover:opacity-75 mx-auto"
                         width={160}
