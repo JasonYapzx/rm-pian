@@ -5,7 +5,7 @@ import TicketActivityDataGrid from '@/app/components/user/ticket/TicketActivityD
 export default function TicketActivity() {
     return (
         <Card >
-            <Typography variant='h6' fontWeight={'bold'} sx={{ padding: 2 }}>Ticket Activity</Typography>
+            <Typography fontWeight={'bold'} sx={{ padding: 2 }}>Ticket Activity</Typography>
             <Divider />
             <TicketActivityDataGrid />
         </Card>

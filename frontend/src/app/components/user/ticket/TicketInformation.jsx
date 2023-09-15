@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Collapse, Divider } from '@mui/material'
+import { Card, Collapse, Divider, Typography } from '@mui/material'
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -33,7 +33,7 @@ export default function TicketInformation() {
                     <ListItemIcon>
                         <Event />
                     </ListItemIcon>
-                    <ListItemText primary="Event Details" />
+                    <ListItemText><Typography fontWeight={"bold"}>Event Details</Typography></ListItemText>
                     {open == 2 ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Divider />
@@ -44,7 +44,7 @@ export default function TicketInformation() {
                     <ListItemIcon>
                         <ListAltIcon />
                     </ListItemIcon>
-                    <ListItemText primary="NFT Details" />
+                    <ListItemText><Typography fontWeight={"bold"}>NFT Details</Typography></ListItemText>
                     {open == 0 ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Divider />
