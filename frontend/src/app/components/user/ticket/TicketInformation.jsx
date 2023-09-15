@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Card, Collapse, Divider, Typography } from '@mui/material'
 import List from '@mui/material/List';

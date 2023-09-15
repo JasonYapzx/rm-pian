@@ -6,7 +6,7 @@ function createData(transaction_hash, time, action, price, from, to) {
     return { transaction_hash, time, action, price, from, to };
 }
 
-function truncate_txn(str, length) {
+function truncateTxn(str, length) {
     if (str.length > length) {
         return str.slice(0, length) + '...';
     } else return str;
@@ -35,7 +35,7 @@ function generateRandomHash() {
 
 const rows = [
     createData(
-        generateRandomHash(),
+        "0xe525FAE3fC6fBB23Af05E54Ff413613A6573CFf2",
         "Thu Apr 01 2023 08:00:00 GMT+0800 (Singapore Standard Time)",
         "Transfer",
         150, // Price as a number
@@ -43,7 +43,7 @@ const rows = [
         "0x7890123456789012345678901234567890abcdef"
     ),
     createData(
-        generateRandomHash(),
+        "0x7890123456789012345678901234567890abcdef",
         "Fri Apr 09 2023 08:00:00 GMT+0800 (Singapore Standard Time)",
         "Transfer",
         200, // Price as a number
@@ -51,100 +51,100 @@ const rows = [
         "0xabcdef1234567890abcdef1234567890abcdef12"
     ),
     createData(
-        generateRandomHash(),
+        "0xFc82416000BA248684A4F7B9fbb56A17dBB72c3E",
         "Wed Mar 25 2023 08:00:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        176,
         "0xFc82416000BA248684A4F7B9fbb56A17dBB72c3E",
         "0xe525FAE3fC6fBB23Af05E54Ff413613A6573CFf2"
     ),
 
     createData(
-        generateRandomHash(),
+        "0xe525FAE3fC6fBB23Af05E54Ff413613A6573CFf2",
         "Thu Apr 01 2023 08:00:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        120,
         "0xe525FAE3fC6fBB23Af05E54Ff413613A6573CFf2",
         "0x7890123456789012345678901234567890abcdef"
     ),
 
     createData(
-        generateRandomHash(),
+        "0xabcdef1234567890abcdef1234567890abcdef12",
         "Fri Apr 09 2023 08:00:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        109,
         "0x7890123456789012345678901234567890abcdef",
         "0xabcdef1234567890abcdef1234567890abcdef12"
     ),
 
     createData(
-        generateRandomHash(),
+        "0x1234567890abcdef1234567890abcdef12345678",
         "Sat May 15 2023 10:30:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        110,
         "0x7890123456789012345678901234567890abcdef",
         "0x1234567890abcdef1234567890abcdef12345678"
     ),
 
     createData(
-        generateRandomHash(),
+        "0x1234567890asdfcdef1234567890abcdef12345678",
         "Sun Jun 20 2023 14:45:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        189,
         "0x1234567890abcdef1234567890abcdef12345678",
         "0x7890123456789012345678901234567890abcdef"
     ),
 
     createData(
-        generateRandomHash(),
+        "0x12342342890abcdef1234567890abcdef12345678",
         "Mon Jul 25 2023 17:15:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        159,
         "0x7890123456789012345678901234567890abcdef",
         "0xabcdef1234567890abcdef1234567890abcdef12"
     ),
 
     createData(
-        "0xabcdef1234567890abcdef1234567890abcdef1234567890123456789012345678",
+        "0xasdfagasd890abcdef1234567890abcdef12345678",
         "Tue Aug 30 2023 19:30:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        156,
         "0xabcdef1234567890abcdef1234567890abcdef12",
         "0x7890123456789012345678901234567890abcdef"
     ),
 
     createData(
-        generateRandomHash(),
+        "0x1fasfasf234567890abcdef1234asdvasvef12345678",
         "Wed Sep 05 2023 21:45:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        101,
         "0x7890123456789012345678901234567890abcdef",
         "0x1234567890abcdef1234567890abcdef12345678"
     ),
 
     createData(
-        generateRandomHash(),
+        "0xasdoiwuegncauisfnaosfasfacgthy0abcdef12345678",
         "Thu Oct 10 2023 23:00:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        123,
         "0x1234567890abcdef1234567890abcdef12345678",
         "0x7890123456789012345678901234567890abcdef"
     ),
 
     createData(
-        "0xabcdef1234567890abcdef1234567890abcdef1234567890123456789012345678",
+        "0xabcdef1234567890abcdef1234567890abc012345678",
         "Fri Nov 15 2023 01:15:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        183,
         "0x7890123456789012345678901234567890abcdef",
         "0xabcdef1234567890abcdef1234567890abcdef12"
     ),
 
     createData(
-        generateRandomHash(),
+        "fqyawef34fioyaewfsc849573ntd98qw4yr8qtcywtyg48tyc",
         "Sat Dec 20 2023 03:30:00 GMT+0800 (Singapore Standard Time),",
         "Sale",
-        Math.floor(Math.random() * 101) + 100,
+        100,
         "0xabcdef1234567890abcdef1234567890abcdef12",
         "0x7890123456789012345678901234567890abcdef"
     ),
@@ -198,8 +198,8 @@ export default function TicketActivityDataGrid() {
                             key={row.transaction_hash}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                            <TableCell align="left">{truncate_txn(row.transaction_hash, 16)}</TableCell>
-                            <TableCell align="left">{new Date(row.time).toLocaleString()}</TableCell>
+                            <TableCell align="left">{truncateTxn(row.transaction_hash, 10)}</TableCell>
+                            <TableCell align="left">{new Date(row.time).toUTCString()}</TableCell>
                             <TableCell align="left">{getActionChip(row.action)}</TableCell>
                             <TableCell align="left">${row.price}</TableCell>
                             <TableCell align="left">{truncate(row.from, 16)}</TableCell>

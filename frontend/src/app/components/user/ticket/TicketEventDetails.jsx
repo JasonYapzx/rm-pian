@@ -1,8 +1,5 @@
 import React from 'react'
 import { Grid, IconButton, Tooltip, Typography } from '@mui/material'
-import { CopyAllOutlined, HelpOutline } from '@mui/icons-material'
-import Link from 'next/link'
-import { Copy } from 'react-feather'
 
 export default function TicketEventDetails() {
     return (

@@ -2,7 +2,6 @@ import React from 'react'
 import { Grid, IconButton, Tooltip, Typography } from '@mui/material'
 import { CopyAllOutlined, HelpOutline } from '@mui/icons-material'
 import Link from 'next/link'
-import { Copy } from 'react-feather'
 
 export default function TicketNftDetails() {
     return (
@@ -18,7 +17,7 @@ export default function TicketNftDetails() {
                     </Link>
                     <Tooltip title="Copy Address">
                         <IconButton sx={{ paddingX: 1, paddingY: 0 }}>
-                            <Copy size={18} sx={{ marginLeft: 1 }} onClick={() => navigator.clipboard.writeText("0xFc82416000BA248684A4F7B9fbb56A17dBB72c3E")} />
+                            <CopyAllOutlined size={18} sx={{ marginLeft: 1 }} onClick={() => navigator.clipboard.writeText("0xFc82416000BA248684A4F7B9fbb56A17dBB72c3E")} />
                         </IconButton>
                     </Tooltip>
                 </Grid>
@@ -34,7 +33,7 @@ export default function TicketNftDetails() {
                     </Link>
                     <Tooltip title="Copy Address">
                         <IconButton sx={{ paddingX: 1, paddingY: 0 }}>
-                            <Copy size={18} sx={{ marginLeft: 1 }} onClick={() => navigator.clipboard.writeText("0x81Ae0bE3A8044772D04F32398bac1E1B4B215aa8")} />
+                            <CopyAllOutlined size={18} sx={{ marginLeft: 1 }} onClick={() => navigator.clipboard.writeText("0x81Ae0bE3A8044772D04F32398bac1E1B4B215aa8")} />
                         </IconButton>
                     </Tooltip>
                 </Grid>
