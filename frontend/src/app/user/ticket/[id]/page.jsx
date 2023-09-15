@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import TicketArt from '../../../components/user/ticket/TicketArt'
 import TicketStats from '../../../components/user/ticket/TicketStats'

@@ -1,5 +1,7 @@
 import React from 'react'
-import { Grid, IconButton, Tooltip, Typography } from '@mui/material'
+import { Grid, Tooltip, Typography } from '@mui/material'
+import { HelpOutline } from '@mui/icons-material'
+
 
 export default function TicketEventDetails() {
     return (
