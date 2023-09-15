@@ -85,7 +85,6 @@ const MerchantPage = () => {
                       <h1> Description:  </h1>
                     </div>
                       <Image
-                        Image
                         src={the1975}
                         alt="logo"
                         className="md:w-40 w-20 transition duration-200 hover:opacity-75 mx-auto"
