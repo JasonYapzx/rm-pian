@@ -25,6 +25,7 @@ import sam from '../../../../public/sam.jpeg';
 import Image from 'next/image';
 
 const CollectionsPage = () => {
+<<<<<<< HEAD
   const buttons = [
     <Button
       key='one'
@@ -311,3 +312,9 @@ const CollectionsPage = () => {
 };
 
 export default CollectionsPage;
+=======
+    return ( <div>Collections Page</div> );
+}
+ 
+export default CollectionsPage;
+>>>>>>> master
