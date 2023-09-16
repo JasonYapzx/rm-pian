@@ -153,34 +153,9 @@ const CollectionsPage = () => {
     17,
     2312,
     9290, avatarPaths[5]),
-    createData(
-      'The 1975: At Their Very Best Tour in Singapore',
-      1.66,
-      140,
-      700,
-      50,
-      6999,
-      10000,
-      avatarPaths[0]
-    ),
-    createData('Lauv: The Between Albums Tour', 2.83,
-    140,
-    700,
-    50,
-    6999,
-    10000, avatarPaths[3]),
-    createData('Anson Seabra: The Neverland Tour in Singapore', 16.90,
-    140,
-    700,
-    50,
-    6999,
-    10000, avatarPaths[4]),
-    createData('Taylor Swift: The Eras Tour', -0.69,
-    140,
-    700,
-    50,
-    6999,
-    10000, avatarPaths[1]),
+    
+   
+   
   ];
 
   // const router = useRouter();
@@ -198,12 +173,12 @@ const CollectionsPage = () => {
           sx={{
             py: 2,
             px: 2,
-            letterSpacing: '.01rem',
-            fontWeight: 700,
+            letterSpacing: '.1rem',
+            fontWeight: 400,
             color: 'ffffff',
             textDecoration: 'none',
 
-            fontSize: 20,
+            fontSize: 40,
           }}
         >
           Top Collections
@@ -285,7 +260,6 @@ const CollectionsPage = () => {
                           />
                         </Avatar>
                         {row.name}
-                        {console.log('hi' + row.avatar)}
                       </div>
                     </TableCell>
                     <TableCell
