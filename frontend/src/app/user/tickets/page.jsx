@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-const TicketPage = () => {
-    return (<div>TicketsPage</div>);
-}
-
-export default TicketPage;
-=======
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -74,4 +67,3 @@ const TicketsPage = () => {
 }
 
 export default TicketsPage;
->>>>>>> master
